@@ -1,0 +1,36 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Nota {
+  id: ID!
+  identificacion: String!
+  nombre: String!
+  apellido: String!
+  estado: Boolean!
+}
+
+type Query {
+  nota(id: ID!): Nota!
+}
+
+type Mutation {
+  createNota(createNotaInput: CreateNotaInput!): Nota!
+  updateEstudiante(updateNotaInput: UpdateNotaInput!): Nota!
+  removeEstudiante(id: ID!): Nota!
+}
+
+input CreateNotaInput {
+  identificacion: String!
+  nombre: String!
+  apellido: String!
+  estado: Boolean!
+}
+
+input UpdateNotaInput {
+  identificacion: String
+  nombre: String
+  apellido: String
+  estado: Boolean
+  id: ID!
+}
